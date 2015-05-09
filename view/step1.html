@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+
+{% set page = 'step1' %}
+
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12">
+            <h2 class="text-center pt40 pb20">請挑選您要的窗簾類型</h2>   
+        </div>
+    </div>
+</div>
+
+    
+<div class="container-fluid">
+        
+    <div class="row">
+
+              <div class="col-lg-3 col-md-3 pa0" style="overflow:hidden;">
+                
+                    <div class="grow">
+                      <a href="{{ url('step2', {type: 1}) }}">
+                        <img src="images/demo-11.jpg" width="1600" height="900" class="img-responsive"> 
+                      </a>
+                    </div>
+                    
+              </div>
+        
+              <div class="col-lg-3 col-md-3 pa0" style="overflow:hidden;">
+                
+                    <div class="grow">
+                      <a href="#">
+                        <img src="images/demo-14.jpg" width="1600" height="900" class="img-responsive"> 
+                      </a>
+                    </div>
+                    
+              </div>
+
+              <div class="col-lg-3 col-md-3 pa0" style="overflow:hidden;">
+                
+                    <div class="grow">
+                      <a href="#">
+                        <img src="images/demo-11.jpg" width="1600" height="900" class="img-responsive"> 
+                      </a>
+                    </div>
+                    
+              </div>
+        
+              <div class="col-lg-3 col-md-3 pa0" style="overflow:hidden;">
+                
+                    <div class="grow">
+                      <a href="#">
+                        <img src="images/demo-11.jpg" width="1600" height="900" class="img-responsive"> 
+                      </a>
+                    </div>
+                    
+              </div>
+
+            
+    </div>
+        
+</div>
+{% endblock content %}

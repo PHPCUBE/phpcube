@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+
+{% set page = 'step2' %}
+
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12">
+            <h2 class="text-center pt20 pb20">請輸入窗戶尺寸</h2>   
+        </div>
+    </div>
+</div>
+
+    
+<div class="container">
+        
+    <div class="row">
+
+        <div class="col-lg-12">
+            <!--表單_開始-->
+            <form action="{{ url('step3') }}" class="curtain-size">
+                <input name="type" type="hidden" value="{{ type }}" />
+                <input name="width" type="text" class="w200 form-size-default mr10" placeholder="窗戶寬度cm" />×
+                <input name="height" type="text" class="w200 form-size-default ml10 mr10" placeholder="窗戶高度cm" />
+                <button type="submit" class="btn btn-success">下一步</button>
+            </form>
+            <!--表單_結束-->
+        </div>  
+              
+    </div>
+        
+</div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{
+  "name": "resipes.today",
+  "dependencies": {
+    "jquery": "1.*",
+    "bootstrap": "3.*",
+    "select2": "4.*",
+    "react": "*",
+    "flux": "*"
+  }
+}

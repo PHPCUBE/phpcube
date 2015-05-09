@@ -1,0 +1,10 @@
+.htaccess
+*.ini
+*.yml
+composer.lock
+/migration/*.log
+/migration/phpmig
+/vendor
+/caches
+/public/land
+/public/assets/components
