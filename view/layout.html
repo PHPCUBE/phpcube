@@ -4,7 +4,7 @@
 
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <title>PHPCUBE - Release Your Super Power</title>
+  <title>PHPCube - Release Your Super Power</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
@@ -12,16 +12,16 @@
   <meta name="author" content="">
 
   <!-- Bootstrap Styles -->
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap.css" rel="stylesheet">
 
   <!-- Styles -->
-  <link href="style.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
 
   <!-- Carousel Slider -->
-  <link href="css/owl-carousel.css" rel="stylesheet">
+  <link href="/css/owl-carousel.css" rel="stylesheet">
 
   <!-- CSS Animations -->
-  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="/css/animate.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -29,13 +29,13 @@
   <link href='http://fonts.googleapis.com/css?family=Exo:400,300,600,500,400italic,700italic,800,900' rel='stylesheet' type='text/css'>
 
   <!-- SLIDER ROYAL CSS SETTINGS -->
-  <link href="royalslider/royalslider.css" rel="stylesheet">
-  <link href="royalslider/skins/default-inverted/rs-default-inverted.css" rel="stylesheet">
+  <link href="/royalslider/royalslider.css" rel="stylesheet">
+  <link href="/royalslider/skins/default-inverted/rs-default-inverted.css" rel="stylesheet">
 
   <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/rs-plugin/css/settings.css" media="screen" />
 
-  <link href="css/skin/blue.css" rel="stylesheet">
+  <link href="/css/skin/blue.css" rel="stylesheet">
 
   <!-- Support for HTML5 -->
   <!--[if lt IE 9]>
@@ -62,7 +62,7 @@
           <span><a data-toggle="tooltip" data-placement="bottom" title="Dribbble" href="#"><i class="fa fa-dribbble"></i></a></span>
           <span class="last"><a data-toggle="tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a></span>
           {% endif %}
-          <span class="last"><a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a></span>
+          <span class="last"><a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="https://www.facebook.com/pages/PHPCube/436234599881179"><i class="fa fa-facebook"></i></a></span>
         </div><!-- end social icons -->
       </div><!-- end columns -->
       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
@@ -89,16 +89,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="index.html" class="navbar-brand">PHPCUBE</a>
+          <a href="index.html" class="navbar-brand">PHPCube</a>
         </div><!-- end navbar-header -->
 
         <div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="about.html">文章</a></li>
-            <li><a href="contact.html">探索</a></li>
-            <li><a href="contact.html">框架</a></li>
-            <li><a href="contact.html">軟體</a></li>
-            <li><a href="contact.html">發問</a></li>
+            <li><a href="{{ url('article') }}">文章</a></li>
+            <li><a href="{{ url('explore') }}">探索</a></li>
+            <li><a href="{{ url('framework') }}">框架</a></li>
+            <li><a href="{{ url('software') }}">軟體</a></li>
+            <li><a href="#">發問</a></li>
           </ul><!-- end navbar-nav -->
         </div><!-- #navbar-collapse-1 -->
       </nav><!-- end navbar yamm navbar-default -->
@@ -109,7 +109,7 @@
   <section class="white-wrapper">
     <div class="container">
       <div class="messagebox">
-        <h2>PHPCUBE，燃起你的 <mark>PHP 魂</mark></h2>
+        <h2>PHPCube，燃燒你的 <mark>PHP 魂</mark></h2>
         <p class="lead">
           成為 PHP 生態圈裡的一塊基石是我們努力追求的目標和遠景。<br />
           無論您想如何使用 PHP，希望我們都能帶來或多或少的幫助。共勉之。<br />
@@ -136,7 +136,7 @@
             </div>
             <h3>瞭解什麼是網站，何謂 PHP</h3>
             <p>帶你瞭解伺服器、瀏覽器、主機等技術概說，並介紹 PHP 在其中所扮演的角色，以及如何搭建一個簡易開發環境。</p>
-            <a href="#" class="readmore">Read More...</a>
+            <a href="{{ url('explore') }}" class="readmore">Read More...</a>
           </div><!-- end service_vertical_box -->
         </div><!-- end col-lg-4 -->
         <div class="col-lg-4">
@@ -146,7 +146,7 @@
             </div>
             <h3>PHP 程式語言入門</h3>
             <p>變數、運算、函式、邏輯、迴圈…介紹 PHP 語言各種的基本部件，只要瞭解，就能輕鬆掌握一半以上的開發能力。</p>
-            <a href="#" class="readmore">Read More...</a>
+            <a href="{{ url('explore') }}" class="readmore">Read More...</a>
           </div><!-- end service_vertical_box -->
         </div><!-- end col-lg-4 -->
         <div class="col-lg-4 last">
@@ -156,7 +156,7 @@
             </div>
             <h3>HTML 語言入門</h3>
             <p>概略介紹常用的 HTML 標籤，並將它和 PHP 一起結合使用。</p>
-            <a href="#" class="readmore">Read More...</a>
+            <a href="{{ url('explore') }}" class="readmore">Read More...</a>
           </div><!-- end service_vertical_box -->
         </div><!-- end col-lg-4 -->
         <div class="col-lg-4 first">
@@ -166,7 +166,7 @@
             </div>
             <h3>資料的進入、儲存與使用</h3>
             <p>介紹可能的資料類型和儲存方式，並說明如何經由 HTML 和 PHP 做到資料的儲存和應用。</p>
-            <a href="#" class="readmore">Read More...</a>
+            <a href="{{ url('explore') }}" class="readmore">Read More...</a>
           </div><!-- end service_vertical_box -->
         </div><!-- end col-lg-4 -->
         <div class="col-lg-4">
@@ -176,7 +176,7 @@
             </div>
             <h3>物件導向的世界</h3>
             <p>是時候該邁入中階了。物件導向在現今程式語言中扮演著極其核心的角色，一同來瞭解什麼是介面、物件、繼承吧。</p>
-            <a href="#" class="readmore">Read More...</a>
+            <a href="{{ url('explore') }}" class="readmore">Read More...</a>
           </div><!-- end service_vertical_box -->
         </div><!-- end col-lg-4 -->
         <div class="col-lg-4 last">
@@ -186,7 +186,7 @@
             </div>
             <h3>設計模式</h3>
             <p>設計模式是一套被整理出來解決特定目的的程式公式。當踏入了設計模式，你才能真正瞭解物件導向的價值所在。</p>
-            <a href="#" class="readmore">Read More...</a>
+            <a href="{{ url('explore') }}" class="readmore">Read More...</a>
           </div><!-- end service_vertical_box -->
         </div><!-- end col-lg-4 -->
         <div class="clearfix"></div>
@@ -206,28 +206,28 @@
         
         <div class="clients padding-top text-center">
           <div class="client-wrap col-lg-3 first">
-            <a href="#" title=""><img src="demos/cube/laravel-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/laravel-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3">
-            <a href="#" title=""><img src="demos/cube/yii-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/yii-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3">
-            <a href="#" title=""><img src="demos/cube/symfony-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/symfony-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3 last">
-            <a href="#" title=""><img src="demos/cube/ci-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/ci-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3 first no-border">
-            <a href="#" title=""><img src="demos/cube/zend-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/zend-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3 no-border">
-            <a href="#" title=""><img src="demos/cube/phalcon-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/phalcon-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3 no-border">
-            <a href="#" title=""><img src="demos/cube/slim-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/slim-bw.png" alt=""></a>
           </div>
           <div class="client-wrap col-lg-3 last no-border">
-            <a href="#" title=""><img src="demos/cube/cakephp-bw.png" alt=""></a>
+            <a href="{{ url('framework') }}" title=""><img src="demos/cube/cakephp-bw.png" alt=""></a>
           </div>
         </div><!-- end row -->
       </div><!-- end container -->
@@ -415,7 +415,7 @@
     <div class="container">
       <div class="col-lg-5 col-md-6 col-sm-12">
         <div class="copyright-text">
-          <p>Copyright © 2015 - PHPCUBE</p>
+          <p>Copyright © 2015 - PHPCube</p>
         </div><!-- end copyright-text -->
       </div><!-- end widget -->
       <div class="col-lg-7 col-md-6 col-sm-12 clearfix">

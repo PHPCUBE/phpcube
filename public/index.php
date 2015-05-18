@@ -195,7 +195,7 @@
    * Load Controllers
    *
    */
-  $app['StructureLoader'] (['main'], _ROOT . '/app');
+  $app['StructureLoader'] (['main', 'article', 'explore', 'framework', 'software'], _ROOT . '/app');
 
 
   /**
